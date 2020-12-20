@@ -1,0 +1,107 @@
+nav {
+  //   height: 200px;
+  //   background-color: rebeccapurple;
+  //   position: sticky;
+  padding-top: 5px;
+  & .contain100 {
+    // background-color: red;
+    height: 50px;
+  }
+  & .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  & .grid {
+    display: grid;
+    grid-template-columns: 15% 57% 28%;
+
+    & .logo {
+      //   background-color: yellow;
+
+      & img {
+        width: 180px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
+
+    & .nav-links {
+      height: 100%;
+      //   background-color: greenyellow;
+
+      & ul {
+        height: 100%;
+      }
+
+      & .flex {
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      &_itmes {
+        // box-sizing: content-box;
+        font-size: 0.9rem;
+        // padding-right: 0.6rem;
+        // padding-left: 0.6rem;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        width: 100px;
+
+        &:hover {
+          border-bottom: greenyellow solid 2px;
+        }
+      }
+    }
+
+    & .search {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      //   background-color: aqua;
+      & .inputIcon {
+        position: relative;
+      }
+
+      & .flex {
+        justify-content: flex-start;
+      }
+
+      & input {
+        border: 2px solid black;
+        height: 35px;
+        width: 150px;
+        padding-left: 26px;
+      }
+    }
+    & .inputIcon {
+      & i {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      & .language {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(228, 228, 228);
+        padding: 4px 10px;
+
+        & i {
+          //   display: flex;
+          //   align-items: flex-start;
+          padding-bottom: 4px;
+          padding-left: 6px;
+        }
+      }
+    }
+    & a {
+      color: rgb(0, 138, 143);
+    }
+  }
+}
