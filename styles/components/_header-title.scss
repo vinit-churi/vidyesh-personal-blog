@@ -1,6 +1,12 @@
 .header-title {
-  background-color: #f7f9fa;
-  //   height: 80px;
+  // background-color: #f7f9fa;
+  // background-color: red;
+  background-color: whitesmoke;
+
+  position: relative;
+  z-index: -20;
+  padding-top: 50px;
+  // height: 80px;
   & h2 {
     padding: 20px 20px;
   }
